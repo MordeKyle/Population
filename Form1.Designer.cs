@@ -93,9 +93,9 @@
             this.daysToMultipleLabel.AutoSize = true;
             this.daysToMultipleLabel.Location = new System.Drawing.Point(12, 144);
             this.daysToMultipleLabel.Name = "daysToMultipleLabel";
-            this.daysToMultipleLabel.Size = new System.Drawing.Size(81, 13);
+            this.daysToMultipleLabel.Size = new System.Drawing.Size(87, 13);
             this.daysToMultipleLabel.TabIndex = 6;
-            this.daysToMultipleLabel.Text = "Days of Inrease";
+            this.daysToMultipleLabel.Text = "Days of Increase";
             // 
             // calculateButton
             // 

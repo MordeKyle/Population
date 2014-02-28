@@ -29,26 +29,26 @@ namespace Population
             try
             {
                 //declaring variables for data user inputs
-                decimal startingAmount;
-                decimal rateOfIncrease;
-                decimal daysOfIncrease;
+                double startingAmount;
+                double rateOfIncrease;
+                double daysOfIncrease;
                 int loopCountAmount = 1;
-                decimal currentAmount;
+                double currentAmount;
                 //variable for calculations during loop
-                currentAmount = decimal.Parse(numberOfOrganismsTxt.Text);
+                currentAmount = int.Parse(numberOfOrganismsTxt.Text);
                 
                 
                 //checking to make sure initial amount of organisms was entered correctly and parsing the data
-                if (decimal.TryParse(numberOfOrganismsTxt.Text, out startingAmount))
+                if (double.TryParse(numberOfOrganismsTxt.Text, out startingAmount))
                 {
                     //checking to make sure the rate of organism growth was entered correctly and parsing the data
-                    if (decimal.TryParse(amountOfIncreaseTxt.Text, out rateOfIncrease))
+                    if (double.TryParse(amountOfIncreaseTxt.Text, out rateOfIncrease))
                     {
                         //putting this data into the correct format for mathmatical calculations
                         rateOfIncrease /= 100;
 
                         //checking to make sure the amount of days the organism will grow is entered correctly and parsing
-                        if (decimal.TryParse(daysToMultiplyTxt.Text, out daysOfIncrease))
+                        if (double.TryParse(daysToMultiplyTxt.Text, out daysOfIncrease))
                         {
                             //loop that displays data and does calculations
                             while (outputListBox.Items.Count < daysOfIncrease)
