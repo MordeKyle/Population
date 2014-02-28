@@ -1,4 +1,9 @@
 ﻿												***CHANGE LOG***
+Version: 1.11 Forgetful Robin
+02/27/2014 @ 23:26
+•changed text on form
+•added icon
+
 Version: 1.1 Thrilled Robin
 02/27/2014 @ 22:43
 •changed decimals to doubles

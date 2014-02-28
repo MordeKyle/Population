@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.numberOfOrganismsTxt = new System.Windows.Forms.TextBox();
             this.amountOfIncreaseTxt = new System.Windows.Forms.TextBox();
             this.daysToMultiplyTxt = new System.Windows.Forms.TextBox();
@@ -142,8 +143,9 @@
             this.Controls.Add(this.daysToMultiplyTxt);
             this.Controls.Add(this.amountOfIncreaseTxt);
             this.Controls.Add(this.numberOfOrganismsTxt);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Population";
             this.ResumeLayout(false);
             this.PerformLayout();
 
