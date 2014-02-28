@@ -1,0 +1,16 @@
+﻿												***CHANGE LOG***
+Version: 1.0 Optimistic Robin
+02/27/2014 @ 20:54
+•added everything to form
+	numberOfOrganismsTxt and Label
+	amountOfIncreaseTxt and Label
+	daysToMultiplyTxt and Label
+	calculateButton
+	resetButton
+	exitButton
+	outputListBox
+•added pretty much everything code wise
+	TryParse on all data
+	created while loop with calculations and counter
+	created output format
+	added statements to reset and exit buttons as well
