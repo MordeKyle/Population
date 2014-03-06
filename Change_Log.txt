@@ -1,4 +1,9 @@
 ﻿												***CHANGE LOG***
+Version: 1.12 Organized Robin
+03/06/2014 @ 11:09
+•changed header comment from // to /* (cleaner)
+•messing with regions
+
 Version: 1.11 Forgetful Robin
 02/27/2014 @ 23:26
 •changed text on form

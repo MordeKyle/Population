@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//Program: Population
-//Author: Kyle McBride A02609917
-//Date: 02/27/2014
-//Description: Application that predicts the approximate size of a population of organisms. The application will 
-//             use text boxes to allow the user to enter the starting number of organisms, the average daily 
-//             population increase (as a percentage), and the number of days the organisms will be left to multiply.
-//                                        ***SEE CHANGELOG IN SOLUTION DIRECTORY***
+/*Program: Population
+  Author: Kyle McBride A02609917
+  Date: 02/27/2014
+  Description: Application that predicts the approximate size of a population of organisms. The application will 
+               use text boxes to allow the user to enter the starting number of organisms, the average daily 
+               population increase (as a percentage), and the number of days the organisms will be left to multiply.
+                                          ***SEE CHANGELOG IN SOLUTION DIRECTORY***                             */
 
 namespace Population
 {
@@ -28,16 +28,20 @@ namespace Population
         {
             try
             {
+                #region Variables
                 //declaring variables for data user inputs
                 double startingAmount;
                 double rateOfIncrease;
                 double daysOfIncrease;
                 int loopCountAmount = 1;
                 double currentAmount;
+                #endregion
+                #region Parse User Data
                 //variable for calculations during loop
                 currentAmount = int.Parse(numberOfOrganismsTxt.Text);
-                
-                
+                #endregion
+
+                #region Processing Data
                 //checking to make sure initial amount of organisms was entered correctly and parsing the data
                 if (double.TryParse(numberOfOrganismsTxt.Text, out startingAmount))
                 {
@@ -68,16 +72,21 @@ namespace Population
                         MessageBox.Show("Please enter a rate in percentage(without the % character) for organsism growth.");
                     }
                 }
+                
                 else //error message for not entering amount of organisms
                 {
                     MessageBox.Show("Please enter how many organisms you are starting with.");
                 }
+                #endregion
+                #region Exception
             }
-            catch (Exception ex)
+            catch (Exception ex) //error message for any exceptions
             {
                 MessageBox.Show(ex.Message);
             }
+                #endregion
         }
+
 
         private void resetButton_Click(object sender, EventArgs e)
         {
